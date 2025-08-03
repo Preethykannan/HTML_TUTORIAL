@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in Html</title>
+</head>
+<body>
+    <h2>Form In HTML</h2>
+   <h3>Student Form</h3>
+   <!-- Form begins; uses GET method; autocomplete turned off -->
+   <!-- by default method will be get -->
+   <form action="" autocomplete="off" method="get">
+       <fieldset>
+        <!-- Title/caption for the fieldset -->
+        <legend>Student Form</legend>
+        <!-- Label for name input -->
+           <label for="std_name">Student Name </label>
+           <!-- Text input for student name -->
+           <input type="text" name="std_name" id="std_name" placeholder="Enter your name" required>
+           <br><br>
+           <!-- Label for mobile number input -->
+           <label for="std_no">Mobile No</label>
+           <!-- Phone number input with max 10 digits -->
+           <input type="tel" name="std_no" id="std_no" placeholder="Enter your Mobile no" required maxlength="10">
+            <br><br>
+            <!-- Label for password input -->
+            <label for="pass">Password</label>
+            <!-- Password input field with minimum 8 characters -->
+            <input type="password" id="pass" placeholder="Enter your Password" required minlength="8">
+            <br><br>
+            <!-- Label for age input -->
+            <label for="std_age">Age</label>
+            <!-- Numeric input for age -->
+            <input type="number" name="std_age" id="std_age" placeholder="Enter your age">
+            <br><br>
+            <!-- Label for email input -->
+            <label for="std_email">Email</label>
+            <!-- Email input (readonly with default value) -->
+            <input type="email" name="std_email" id="std_email" placeholder="Enter your mail-id" value="yourname@67gmail.com" readonly>
+            <br><br>
+            <!-- Label for subjects -->
+            <label for="">Subjects :</label>
+            <!-- Checkbox for subjects -->
+            <input type="checkbox" name="std_sub1" id="std_sub1" value="html">
+            <label for="std_sub1">HTML</label>
+            <input type="checkbox" name="std_sub2" id="std_sub2"value="css">
+            <label for="std_sub2">CSS</label>
+            <input type="checkbox" name="std_sub3" id="std_sub3"value="js">
+            <label for="std_sub3">Javascript</label>
+            <br><br>
+            <!-- Label for Select your gender -->
+            <label for="">Select Your Gender :</label>
+            <!-- Radio button for selecting gender -->
+            <input type="radio" name="std_gen" id="std_gen1" value="male">
+            <label for="std_gen1">Male</label>
+            <input type="radio" name="std_gen" id="std_gen2" value="Female">
+            <label for="std_gen2">Female</label>
+            <input type="radio" name="std_gen" id="std_gen3" value="Other">
+            <label for="std_gen3">Other</label>
+            <br><br>
+            <!-- Label for DOB -->
+            <label for="std_dob">Date Of Birth :</label>
+            <!-- Date input field -->
+            <input type="date" name="std_dob" id="std_dob">
+            <br><br>
+            <!-- Label for Address -->
+            <label for="add">Address</label>
+            <!-- Textarea for entering address -->
+            <textarea name="address" id="add" rows="3" cols="30" placeholder="Enter your Address"></textarea>
+            <br><br>
+            <!-- Label for select any course -->
+            <label for="std_course">Select any course :</label>
+            <select name="std_course" id="std_course"><!-- Dropdown menu to select a course -->
+                <option value="java">Java Fullstack</option><!-- Dropdown option for Java Fullstack -->
+                <option value="python">Python Fullstack</option><!-- Dropdown option for Python Fullstack -->
+                <option value="mern">Mern stack</option><!-- Dropdown option for Mern Stack -->
+            </select>
+            <br><br>
+            <!-- Label for Expected salary -->
+            <label for="std_exp_sal">Expected salary</label>
+            <!-- By default the range is from 0 to 100 -->
+            <input type="range" name="std_exp_sal" id="std_exp_sal" min="10000" max="60000"><!-- Slider input for salary range -->
+            <br><br>
+            <!-- Button creation using input type -->
+            <input type="submit"value="Submit">
+            <input type="reset" value="Reset">
+            <br><br>
+            <!-- Button creation using button tag -->
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+       </fieldset>
+   </form>
+</body>
+</html>
